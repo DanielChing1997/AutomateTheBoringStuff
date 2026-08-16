@@ -77,5 +77,36 @@ def roundFunction():
     print(a)
     a=round(7.77777777,6)
     print(a)
+    a=abs(25)
+    print(a)
+    a=abs(-25)
+    print(a)
 
-roundFunction()
+print("Welcome to practice.py! Which function would you like?")
+
+while True:
+    choice = int(input("""Pick your Function!
+1: mathPractice
+2: variablePractice
+3: strIntFloatFunction
+4: typeFunction
+5: roundFunction
+6: exit
+Put choice here:"""))
+
+    if choice == 1:
+        mathPractice()
+    if choice == 2:
+        strIntFloatFunctions()
+    if choice == 3:
+        typeFunction()
+    if choice == 4:
+        variablePractice()
+    if choice == 5:
+        roundFunction()
+    if choice == 6:
+        print("Thank you!")
+        break
+    else:
+        print("Please enter a valid answer.")
+
