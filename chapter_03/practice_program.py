@@ -75,4 +75,16 @@ def rockPaperScissors():
             print('You lose!')
             l = l + 1
 
-rockPaperScissors()
+def numOneToTen():
+    i = 0
+    while i < 10:
+        i = i + 1
+        print(i)
+
+def numOneToTenFor():
+    i = 0
+    for i in range(10):
+        i = i + 1
+        print(i)
+
+numOneToTenFor()
