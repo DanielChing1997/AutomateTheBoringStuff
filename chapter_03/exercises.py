@@ -1,3 +1,10 @@
+import random
+import sys
+
+def randomProgram():
+    for i in range(5):
+        print(random.randint(1,10))
+
 def yourName():
     name = ''
     while name != 'your name':
@@ -85,5 +92,20 @@ def rangeLoop():
     for i in range(12, 16):
         print(i)
 
+def rangePractice():
+    for i in range(0, 10, 2):
+        print(i)
 
-rangeLoop()
+def negativeRange():
+    for i in range(5,-1,-1):
+        print(i)
+
+def sysTest():
+    while True:
+        print('Type exit to exit.')
+        response = input('>')
+        if response == 'exit':
+            sys.exit()
+        print('You typed ' + response + '.')
+
+sysTest()
