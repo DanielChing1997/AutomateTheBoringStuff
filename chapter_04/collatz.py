@@ -23,14 +23,13 @@ def collatz():
                 if number % 2 == 0:
                     number = number // 2
                     count = count + 1
-                    print(number)
-                    print(f"Count = {count}")
 
                 else:
                     number = 3 * number + 1
                     count = count + 1 
-                    print(number)
-                    print(f"Count = {count}")
+                   
+                print(number)
+                print(f"Count = {count}")
 
         except ValueError:
             print('Please enter a valid number')
