@@ -13,18 +13,24 @@ import sys
 
 def collatz():
     while True:
+    
         try:
             number = int(input('Please enter a number'))
+            count = 0
     
 
             while number != 1:
                 if number % 2 == 0:
                     number = number // 2
+                    count = count + 1
                     print(number)
+                    print(f"Count = {count}")
 
                 else:
                     number = 3 * number + 1
+                    count = count + 1 
                     print(number)
+                    print(f"Count = {count}")
 
         except ValueError:
             print('Please enter a valid number')
