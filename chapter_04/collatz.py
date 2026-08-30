@@ -8,18 +8,30 @@
 # To make the output more compact, the print() calls that print the numbers should have a sep=' ' named parameter to print all values on one line.
 
 # The output of this program could look something like this:
+import sys
+
 
 def collatz():
-    number = int(input('Please enter a number'))
+    while True:
+        try:
+            number = int(input('Please enter a number'))
+    
 
-    while number != 1:
-        if number % 2 == 0:
-            number = number // 2
-            print(number)
+            while number != 1:
+                if number % 2 == 0:
+                    number = number // 2
+                    print(number)
 
-        elif number % 2 == 1:
-            number = 3 * number + 1
-            print(number)
+                else:
+                    number = 3 * number + 1
+                    print(number)
+
+        except ValueError:
+            print('Please enter a valid number')
+
+        except KeyboardInterrupt:
+            print('Thank you!')
+            sys.exit()
 
     
 
