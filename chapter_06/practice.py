@@ -1,3 +1,5 @@
+import random
+
 def firstLists():
     spamNum = [1, 2, 3]
     spamAnimal = ['cat', 'bat', 'rat', 'elephant']
@@ -108,10 +110,108 @@ def petList():
         else:
             print('We do not a ' +petChoice)
 
-petList()
+def multipleAssignments():
+    cat = ['fat', 'gay', 'loud']
+    size, color, disposition = cat
+    print(size)
+    print(color)
+    print (disposition)
+
+def enumerationPractice():
+    listPractice = ['cat','dog','hamster','poopy']
+    for index, item in enumerate(listPractice):
+        print(item, 'is number ', str(index))
+
+def randomPractice():
+    pets = ['dog','cat','hamster']
+    randomPet = random.choice(pets)
+    print(randomPet)
+    randomShuffle = random.shuffle(pets)
+    print(pets)
+
+def findingValues():
+    pets = ['dog','cat','hamster']
+    print(pets.index('hamster'))
+
+def appendPractice():
+    pets = ['dog', 'cat', 'hamster']
+    pets.append('poopy')
+    print(pets)
+
+def insertPractice():
+    pets = ['dog', 'cat', 'hamster']
+    pets.insert(2, 'poopy')
+    print(pets)
+
+def removePractice():
+    pets = ['dog', 'cat', 'hamster']
+    pets.remove('dog')
+    print(pets)
+
+def sortPractice():
+    spam = [1,4,6,78,32,5]
+    spamString = ['dog','cat','pervs','network','one million']
+    spamString.sort()
+    spam.sort()
+    print(spam)
+    print(spamString)
+
+def reversePractice():
+    spam = [1,33,24,222222,55]
+    spam.reverse()
+    print(spam)
+
+def booleanPractice():
+    spam = ['cat','dog']
+    if spam[0] == 'cat':
+        print('Yes cat')
+    else:
+        print('No cat')
+
+def emptyListPractice():
+    spam = []
+    if len(spam) > 0 and spam[0] == 'cat':
+        print('A cat yes a cat')
+    else:
+        print('The first item is not a cat')
+
+def magicEightBall():
+    magicBall = ['Yes', 'No', 'Maybe', 'Ask again']
+    randomFortune = random.choice(magicBall)
+    print(randomFortune)
+
+def magicEightBallAlt():
+    magicBall = ['Yes', 'No', 'Maybe', 'Ask again']
+    print(magicBall[random.randint(0, len(magicBall) - 1)])
+
+magicEightBallAlt()
+
+# emptyListPractice()
+
+
+# booleanPractice()
+
+# reversePractice()
+
+# sortPractice()
+
+# removePractice()
+
+# insertPractice()
+
+# appendPractice()
+
+# findingValues()
+
+# randomPractice()
+
+# enumerationPractice()
+
+# multipleAssignments()
+
+# petList()
 
 # inAndNotIn()
-
 
 # forLoopListTwo()
 
