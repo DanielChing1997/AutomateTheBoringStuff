@@ -1,4 +1,5 @@
 import random
+import copy
 
 def firstLists():
     spamNum = [1, 2, 3]
@@ -184,7 +185,78 @@ def magicEightBallAlt():
     magicBall = ['Yes', 'No', 'Maybe', 'Ask again']
     print(magicBall[random.randint(0, len(magicBall) - 1)])
 
-magicEightBallAlt()
+def listTest():
+    name = 'Zophie'
+    print(name[0])
+    print(name[1])
+    print(name[0:5])
+    nameTest = 'Zo' in name
+    print(nameTest)
+
+    for i in name:
+        print('**** ' +i,'****')
+
+def stringChange():
+    name = 'Zophie a cat'
+    new_name = name[0:6] + ' the ' +name[9:12]
+    print(name, new_name)
+def listChange():
+    eggs = ['A', 'B', 'C']
+    del eggs[0]
+    del eggs[1]
+    del eggs[0]
+    eggs.append('x')
+    eggs.append('y')
+    eggs.append('z')
+    print(eggs)
+
+def tupleTest():
+    firstTuple = (1, 2, 3, 'hey')
+    len(firstTuple)
+    firstTuple[0]
+    print(firstTuple)
+    newList = list('hello')
+    print(newList)
+
+def mutableList():
+    eggs = [0 ,1, 2, 3]
+    spam = eggs
+    eggs[1] = 'hello'
+    print(eggs)
+    print(spam)
+
+def appendTest():
+    def eggs(some_parameter):
+        some_parameter.append('Hello')
+
+    spam = [1,2,3,4]
+    print(spam)
+    eggs(spam)
+    print(spam)
+
+def copyTest():
+    spam = ['A','B','C']
+    cheese = copy.copy(spam)
+    print(spam)
+    print(cheese)
+    cheese[1] = 42
+    print(cheese)
+
+copyTest()
+
+# appendTest()
+
+# mutableList()
+
+# tupleTest()
+    
+# listChange()
+
+# stringChange()
+
+# listTest()
+
+# magicEightBallAlt()
 
 # emptyListPractice()
 
