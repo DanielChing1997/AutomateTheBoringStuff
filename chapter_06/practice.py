@@ -85,9 +85,12 @@ def forLoopReview():
 def forLoopList():
     supplies = ['pen', 'paper', 'dude', 'hello', 'hey']
     count = 0
+    print(str(supplies))
     for i in range(len(supplies)):
-        print(supplies[count])
+        print(supplies[count] + ', ')
         count = count + 1
+        if int(count) == int((len(supplies) + 1)):
+            print('and' + supplies[count])
 
 def forLoopListTwo():
     supplies = ['fire', 'flames', 'paper', 'truth']
@@ -242,7 +245,7 @@ def copyTest():
     cheese[1] = 42
     print(cheese)
 
-copyTest()
+forLoopList()
 
 # appendTest()
 
